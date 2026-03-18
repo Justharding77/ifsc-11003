@@ -103,3 +103,33 @@ nav.primary ul li a{
 nav.primary ul li a:hover{
    background-color:rgba(0,0,0,.8);
 }
+  #blog{
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+  }
+  #blog #recent-posts{
+    color: brown;
+  }
+  #blog .post{
+    width: 30%;
+    background-color: #3b6b8b;
+    padding: 10px;
+  }
+  #blog .post header figure{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+  }
+  #blog .post header figure img{
+    width: 100%;
+  }
+
+  #blog .post header h3 a{
+color: cadetblue;
+  }
+  #blog .post header .post-date{
+    color: #ffffff;
+    display: block;
+    text-align: center;
+  }
