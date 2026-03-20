@@ -133,3 +133,45 @@ color: cadetblue;
     display: block;
     text-align: center;
   }
+
+ #main-content #content h2 {
+    color: red;
+    font-size: 26px;
+    text-align: center;
+}
+
+#main-content {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#main-content{}
+#main-content #content{}
+#main-content #content h2{}
+#main-content p {
+    text-align: justify;
+    color: #3b6b8b;
+}
+#main-content #blog p{
+    color: #ffffff;
+}
+
+
+#practice{}
+#practice h2{}
+#practice p{}
+#practice table {
+    width: 100%;
+    border: 1px solid #3333;
+    border-collapse: collapse;
+}
+
+#practice table tr td{
+  width: 33%; 
+  text-align: center;
+  border: 1px solid #000000;
+}
+
+#practice table tr td:nth-child(odd){
+  background-color: red;
+}
