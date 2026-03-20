@@ -44,7 +44,13 @@ html {
 
 body {
   font-family: "Rubik", sans-serif;
-  margin:0;
+  margin: 0;
+  background-color: #f5f1eb;
+}
+
+img {
+  max-width: 100%;
+  display: block;
 }
 
 header.primary{
@@ -52,16 +58,6 @@ header.primary{
   color:#ffffff;
   text-align:center;
   text-shadow:2px 2px #000000;
-  /* Longform */
-  padding-top:40px;
-  padding-right:40px;
-  padding-bottom:40px;
-  padding-left:40px;
-  /* Single Value */
-  padding:40px;
-  /* T/R/B/L */
-  padding: 40px 40px 20px 40px;
-  /* T/B | L/R */
   padding: 20px 40px;
 }
 
@@ -83,18 +79,21 @@ header.primary p.subtitle{
 
 nav.primary ul{
   padding:0;
+  margin: 0;
   display:flex;
   flex-direction:row;
   justify-content:space-around;
+  flex-wrap: wrap;
 }
 
 nav.primary ul li{
   list-style-type:none;
+  margin: 5px;
 }
 
 nav.primary ul li a{
   background-color:rgba(0,0,0,.4);
-  padding: 5px 7.5px;
+  padding: 6px 10px;
   border: 2px solid #000000;
   border-radius: 8px;
   transition: .5s;
@@ -103,75 +102,253 @@ nav.primary ul li a{
 nav.primary ul li a:hover{
    background-color:rgba(0,0,0,.8);
 }
-  #blog{
-    background-color: #ffffff;
-    display: flex;
-    justify-content: space-between;
-  }
-  #blog #recent-posts{
-    color: brown;
-  }
-  #blog .post{
-    width: 30%;
-    background-color: #3b6b8b;
-    padding: 10px;
-  }
-  #blog .post header figure{
-    margin: 0;
-    padding: 0;
-    outline: 0;
-  }
-  #blog .post header figure img{
-    width: 100%;
-  }
-
-  #blog .post header h3 a{
-color: cadetblue;
-  }
-  #blog .post header .post-date{
-    color: #ffffff;
-    display: block;
-    text-align: center;
-  }
-
- #main-content #content h2 {
-    color: red;
-    font-size: 26px;
-    text-align: center;
-}
 
 #main-content {
-    padding-left: 20px;
-    padding-right: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
 }
 
-#main-content{}
-#main-content #content{}
-#main-content #content h2{}
+#main-content #content {
+  background-color: #ffffff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+#main-content #content h2 {
+  color: #8b2e1e;
+  font-size: 26px;
+  text-align: center;
+  margin-top: 0;
+}
+
 #main-content p {
-    text-align: justify;
-    color: #3b6b8b;
+  text-align: justify;
+  color: #3b6b8b;
+  line-height: 1.5;
 }
+
 #main-content #blog p{
-    color: #ffffff;
+  color: #ffffff;
 }
 
+/* ------------------ Blog Section --------------------- */
 
-#practice{}
-#practice h2{}
-#practice p{}
+#recent-posts {
+  color: #8b2e1e;
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#blog{
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+#blog .post{
+  width: 31%;
+  background-color: #3b6b8b;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+#blog .post header figure{
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+
+#blog .post header figure img{
+  width: 100%;
+  border-radius: 6px;
+}
+
+#blog .post header figure figcaption {
+  color: #ffffff;
+  text-align: center;
+  margin-top: 8px;
+}
+
+#blog .post header h3 {
+  text-align: center;
+}
+
+#blog .post header h3 a{
+  color: #ffe4a3;
+  text-decoration: none;
+}
+
+#blog .post header h3 a:hover{
+  text-decoration: underline;
+}
+
+#blog .post header .post-date{
+  color: #ffffff;
+  display: block;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#blog .post ul,
+#blog .post ol {
+  color: #ffffff;
+  padding-left: 20px;
+}
+
+#blog .post li {
+  margin-bottom: 6px;
+}
+
+#blog .post footer {
+  color: #ffffff;
+  margin-top: 10px;
+}
+
+#blog .post footer a {
+  color: #ffe4a3;
+  text-decoration: none;
+}
+
+#blog .post footer a:hover {
+  text-decoration: underline;
+}
+
+/* ------------------ Practice Section --------------------- */
+
+#practice {
+  background-color: #ffffff;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+#practice h2,
+#practice h3,
+#practice h4 {
+  color: #8b2e1e;
+}
+
 #practice table {
-    width: 100%;
-    border: 1px solid #3333;
-    border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #333333;
+  border-collapse: collapse;
+  margin-bottom: 20px;
 }
 
+#practice table caption {
+  color: #8b2e1e;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#practice table th,
 #practice table tr td{
-  width: 33%; 
+  width: 33%;
   text-align: center;
   border: 1px solid #000000;
+  padding: 10px;
 }
 
-#practice table tr td:nth-child(odd){
-  background-color: red;
+#practice table th {
+  background-color: #3b6b8b;
+  color: #ffffff;
+}
+
+#practice table tr:nth-child(odd) td{
+  background-color: #f3e6da;
+}
+
+#practice ol,
+#practice ul {
+  padding-left: 20px;
+}
+
+#practice li {
+  margin-bottom: 8px;
+}
+
+#practice dl dt {
+  font-weight: bold;
+  color: #8b2e1e;
+}
+
+#practice dl dd {
+  color: #3b6b8b;
+  margin-bottom: 10px;
+}
+
+#practice blockquote {
+  background-color: #f3e6da;
+  border-left: 4px solid #8b2e1e;
+  padding: 15px;
+  margin: 20px 0;
+}
+
+/* ------------------ Sidebar --------------------- */
+
+aside {
+  padding: 20px;
+}
+
+aside .container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+aside .widget {
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 8px;
+  width: 48%;
+}
+
+aside .widget h2 {
+  color: #8b2e1e;
+  margin-top: 0;
+}
+
+aside .widget p {
+  color: #3b6b8b;
+}
+
+aside .widget footer {
+  color: #555555;
+}
+
+/* ------------------ Footer --------------------- */
+
+footer.primary {
+  background-color: #3b6b8b;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+footer.primary p {
+  margin: 0;
+  color: #ffffff;
+}
+
+/* ------------------ Responsive --------------------- */
+
+@media screen and (max-width: 900px) {
+  #blog .post {
+    width: 100%;
+  }
+
+  aside .widget {
+    width: 100%;
+  }
+
+  nav.primary ul {
+    flex-direction: column;
+    align-items: center;
+  }
 }
