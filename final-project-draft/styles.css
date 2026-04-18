@@ -1,3 +1,166 @@
-body{
-    background-color: aquamarine;
+/* -------------------- BASIC SETUP -------------------- */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #222;
+}
+
+/* -------------------- WRAPPER -------------------- */
+#wrapper {
+  width: 90%;
+  max-width: 1000px;
+  margin: 20px auto;
+  background-color: #ffffff;
+  border: 2px solid #333;
+}
+
+/* -------------------- HEADER -------------------- */
+header {
+  background-color: #c62828; /* RED (truck color) */
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+.tagline {
+  margin-top: 8px;
+}
+
+/* -------------------- NAV (FLEXBOX) -------------------- */
+nav {
+  background-color: #222;
+}
+
+.nav-flex {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav-flex li {
+  flex: 1;
+}
+
+.nav-flex a {
+  display: block;
+  text-align: center;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-flex a:hover,
+.nav-flex a.active {
+  background-color: #2e7d32; /* GREEN */
+}
+
+/* -------------------- MAIN -------------------- */
+main {
+  padding: 20px;
+}
+
+/* -------------------- CONTENT BOX -------------------- */
+.content-box {
+  border: 2px solid #333;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #fff8e1; /* light tan */
+}
+
+/* -------------------- FLEX SECTION -------------------- */
+.home-flex {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+/* -------------------- CARDS -------------------- */
+.card {
+  flex: 1;
+  border: 2px solid #333;
+  padding: 15px;
+  background-color: #f1f8e9; /* light green */
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+/* -------------------- GRID (RECIPES / REVIEWS) -------------------- */
+.recipe-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px;
+}
+
+/* -------------------- BUTTON -------------------- */
+.btn {
+  display: inline-block;
+  padding: 10px 14px;
+  background-color: #c62828; /* RED */
+  color: white;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.btn:hover {
+  background-color: #8e0000;
+}
+
+/* -------------------- LINKS -------------------- */
+a {
+  color: #2e7d32; /* GREEN */
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* -------------------- FOOTER -------------------- */
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 12px;
+}
+
+/* -------------------- PAGE BACKGROUNDS -------------------- */
+.home-bg {
+  background-color: #f4f4f4;
+}
+
+.about-bg {
+  background-color: #fff3e0;
+}
+
+.recipes-bg {
+  background-color: #f1f8e9;
+}
+
+.resources-bg {
+  background-color: #eeeeee;
+}
+
+.contact-bg {
+  background-color: #fafafa;
+}
+
+.reviews-bg {
+  background-color: #fdf6e3;
 }
