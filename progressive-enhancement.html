@@ -50,12 +50,12 @@
       margin-bottom: 15px;
     }
 
-    a.article-link {
+    a {
       color: #ff914d;
       text-decoration: none;
     }
 
-    a.article-link:hover {
+    a:hover {
       text-decoration: underline;
     }
   </style>
@@ -72,34 +72,42 @@
 </nav>
 
 <section>
-  <h2>What is Progressive Enhancement?</h2>
+  <h2>Thoughts on Progressive Enhancement</h2>
 
   <p>
-    Progressive enhancement is a web development approach where a website is built starting with the basic structure first, then improved with additional features. This allows the website to work even if a user has an older browser or a slow internet connection.
+    After reading the A List Apart article <em>Understanding Progressive Enhancement</em>, I learned that progressive enhancement is about building a website starting with a basic, functional version first, and then improving it for users with more advanced browsers. Instead of assuming every user has the latest technology, the goal is to make sure the content is always accessible.
   </p>
 
   <p>
-    Developers begin with HTML to create the content, then add CSS for design, and finally use JavaScript for interactivity. This ensures the website still works even if some features fail or are not supported.
-  </p>
-
-  <h2>Why It Matters</h2>
-
-  <p>
-    Progressive enhancement is important because not all users have the same devices, browsers, or internet speeds. If a website relies too heavily on advanced features, it can completely break for some users.
+    The article explains how web development should be separated into three main parts: content, presentation, and behavior. Content is handled by HTML, presentation by CSS, and behavior by JavaScript. This separation helps make websites more reliable because if one part fails, the rest of the site can still work properly.
   </p>
 
   <p>
-    By building a strong foundation first, websites become more reliable, accessible, and easier to use. It also improves performance and prevents issues when scripts or styles do not load properly.
-  </p>
-
-  <h2>Article I Read</h2>
-
-  <p>
-    I read an article from Mozilla Developer Network (MDN) that explains progressive enhancement in more detail:
+    What stood out to me is that progressive enhancement focuses on accessibility and usability for all users. Some people may have slower internet connections or older devices, so building a site this way ensures that everyone can still access important information even if they do not get all the advanced features.
   </p>
 
   <p>
-    <a class="article-link" href="https://developer.mozilla.org/en-US/docs/Glossary/Progressive_Enhancement" target="_blank">
+    I think this approach is important in modern web development because it prevents websites from breaking when features like JavaScript fail to load. It creates a better overall experience by making sure users always have access to the main content, even if the design or interactivity is limited.
+  </p>
+
+  <h2>Articles I Read</h2>
+
+  <p>
+    The main article I used for this assignment:
+  </p>
+
+  <p>
+    <a href="https://alistapart.com/article/understandingprogressiveenhancement/" target="_blank">
+      Understanding Progressive Enhancement (A List Apart)
+    </a>
+  </p>
+
+  <p>
+    I also read another article from Mozilla Developer Network (MDN):
+  </p>
+
+  <p>
+    <a href="https://developer.mozilla.org/en-US/docs/Glossary/Progressive_enhancement" target="_blank">
       Progressive Enhancement (MDN Web Docs)
     </a>
   </p>

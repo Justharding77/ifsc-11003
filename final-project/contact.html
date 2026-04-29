@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="contact-bg">
+
+<div id="wrapper">
+
+<header>
+  <img src="img/logo.png" alt="MeMe's Twisted Potato Logo" class="logo">
+  <h1>MeMe's Twisted Potato and More LLC</h1>
+  <p class="tagline">Contact Us</p>
+</header>
+
+<nav>
+  <ul class="nav-flex">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="recipes.html">Recipes</a></li>
+    <li><a href="reviews.html">Reviews</a></li>
+    <li><a href="contact.html" class="active">Contact</a></li>
+  </ul>
+</nav>
+
+<main>
+
+<section class="content-box">
+  <h2>Get in Touch</h2>
+  <p>
+    Have a question or want to know more about our food? Send us a message below.
+  </p>
+</section>
+
+<section class="content-box">
+
+  <!-- ✅ YOUR WORKING FORM -->
+  <form action="https://formspree.io/f/xykogwjd" method="POST" class="contact-form">
+
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="favorite">Favorite Menu Item</label>
+    <select id="favorite" name="favorite">
+      <option>Stew w/ Rice</option>
+      <option>Cauli Wings</option>
+      <option>Street Tacos</option>
+      <option>Loaded Potato</option>
+      <option>Mac and Cheese</option>
+      <option>Collard Greens</option>
+    </select>
+
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="4"></textarea>
+
+    <input type="submit" value="Send Message">
+
+  </form>
+
+</section>
+
+<section class="content-box">
+  <h2>Business Information</h2>
+
+  <p><strong>Location:</strong> Little Rock, Arkansas</p>
+  <p><strong>Phone:</strong> (501) 960-0499</p>
+
+  <p>
+    <a href="http://www.memestwistedpotato.ecwid.com" target="_blank" class="btn">
+      Visit Our Website
+    </a>
+  </p>
+
+</section>
+
+</main>
+
+<footer>
+  <p>&copy; 2026 MeMe's Twisted Potato and More LLC</p>
+</footer>
+
+</div>
+
+</body>
+</html>

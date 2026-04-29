@@ -1,0 +1,171 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #222;
+}
+
+/* -------- BACKGROUND IMAGE -------- */
+.home-bg,
+.about-bg,
+.recipes-bg,
+.reviews-bg,
+.contact-bg {
+  background-image: url("img/logo-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* -------- WRAPPER -------- */
+#wrapper {
+  width: 90%;
+  max-width: 1000px;
+  margin: 20px auto;
+  background-color: rgba(255, 255, 255, 0.92);
+  border: 2px solid #333;
+  border-radius: 10px;
+}
+
+/* -------- HEADER -------- */
+header {
+  background-color: #c62828;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.tagline {
+  margin-top: 8px;
+}
+
+/* -------- NAV (FLEXBOX) -------- */
+nav {
+  background-color: #222;
+  border-radius: 10px 10px 0 0;
+}
+
+.nav-flex {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav-flex li {
+  flex: 1;
+}
+
+.nav-flex a {
+  display: block;
+  text-align: center;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-flex a:hover,
+.nav-flex a.active {
+  background-color: #2e7d32;
+}
+
+/* -------- MAIN -------- */
+main {
+  padding: 20px;
+}
+
+/* -------- BOXES -------- */
+.content-box {
+  border: 2px solid #333;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #fff8e1;
+  border-radius: 10px;
+}
+
+/* -------- FLEX -------- */
+.home-flex {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+/* -------- CARDS -------- */
+.card {
+  flex: 1;
+  border: 2px solid #333;
+  padding: 15px;
+  background-color: #f1f8e9;
+  border-radius: 10px;
+}
+
+/* -------- GRID -------- */
+.recipe-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px;
+}
+
+/* -------- BUTTON -------- */
+.btn {
+  display: inline-block;
+  padding: 10px 14px;
+  background-color: #c62828;
+  color: white;
+  text-decoration: none;
+  margin-top: 10px;
+  border-radius: 6px;
+}
+
+.btn:hover {
+  background-color: #8e0000;
+}
+
+/* -------- LINKS -------- */
+a {
+  color: #2e7d32;
+}
+
+/* -------- FOOTER -------- */
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 12px;
+}
+
+/* -------- FORM -------- */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin-top: 10px;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #333;
+  border-radius: 6px;
+}
+
+.contact-form input[type="submit"] {
+  margin-top: 15px;
+  background-color: #c62828;
+  color: white;
+  border: none;
+  padding: 10px;
+}
